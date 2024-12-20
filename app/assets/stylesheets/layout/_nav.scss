@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $nav-bg-color;
+    padding: 1rem;
+}
+
+nav a.button {
+    color: $button-text-color;
+    margin-left: 1rem;
+    text-decoration: none;
+    background-color: $button-bg-color;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
