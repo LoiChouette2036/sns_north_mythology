@@ -1,0 +1,23 @@
+<%= form_with model: profile, local: true do |f| %>
+  <div>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+
+  <div>
+    <%= f.label :bio %><br>
+    <%= f.text_area :bio %>
+  </div>
+
+  <div>
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+
+  <div>
+    <%= f.label :patron_deity %><br>
+    <%= f.select :patron_deity, options_for_select(Profile::NORSE_GODS) %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
